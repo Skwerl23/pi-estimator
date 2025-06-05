@@ -4,7 +4,6 @@ use std::time::Instant;
 fn main() {
     let start = Instant::now();
     const B: f64 = 100_000_000.0;
-    // Perform some operation that you want to time
 
 
     let threads = 8;
@@ -38,7 +37,6 @@ fn main() {
 fn single_thread() {
     let start = Instant::now();
     const B: f64 = 100_000_000.0;
-    // Perform some operation that you want to time
     let a = sum_chunk(B as u32);
     let end = Instant::now();
 
